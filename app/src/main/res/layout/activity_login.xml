@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@drawable/outline"
+
+    >
+
+    <Button
+        android:id="@+id/btnForgotPassword"
+        style="@style/mainPageButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnValidateLogin"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="15px"
+        android:height="10dp"
+        />
+
+    <EditText
+        android:id="@+id/edEmailLogin"
+        style="@style/editTextMainPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:hint="email"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/etPassword"
+        style="@style/editTextMainPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:inputType="textPassword"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edEmailLogin">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/btnValidateLogin"
+        style="@style/mainPageButtons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        app:layout_constraintLeft_toLeftOf="@+id/etPassword"
+        app:layout_constraintRight_toRightOf="@+id/etPassword"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:id="@+id/tvCreateAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Need an account?"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toLeftOf="@+id/btnValidateLogin"
+        app:layout_constraintRight_toRightOf="@+id/btnValidateLogin"
+        app:layout_constraintTop_toBottomOf="@+id/btnForgotPassword"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/titanRed"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

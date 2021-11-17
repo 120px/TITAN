@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    
+    >
+
+    <ImageView
+        android:id="@+id/imageTitanLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@mipmap/titan_logo_foreground"
+        android:minHeight="150dp"
+        android:minWidth="180dp"/>
+
+    <TextView
+        android:id="@+id/tvTitanTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="titan"
+        app:layout_constraintTop_toBottomOf="@+id/imageTitanLogo"
+        app:layout_constraintLeft_toLeftOf="@+id/imageTitanLogo"
+        app:layout_constraintRight_toRightOf="@+id/imageTitanLogo"
+        style="@style/titleHeader"
+
+        />
+
+    <Button
+        android:id="@+id/btnCreateAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        app:layout_constraintTop_toBottomOf="@+id/btnGoToLogin"
+        app:layout_constraintLeft_toLeftOf="@id/btnGoToLogin"
+        app:layout_constraintRight_toRightOf="@id/btnGoToLogin"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/titanRed"
+        style="@style/mainPageButtons"
+
+        />
+
+    <Button
+        android:id="@+id/btnGoToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitanTitle"
+        app:layout_constraintRight_toRightOf="@id/tvTitanTitle"
+        app:layout_constraintLeft_toLeftOf="@id/tvTitanTitle"
+        android:layout_marginTop="45dp"
+        style="@style/mainPageButtons"
+        >
+
+
+
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

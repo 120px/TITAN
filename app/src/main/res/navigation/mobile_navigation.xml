@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_startWorkout">
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.project.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/navigation_startWorkout"
+        android:name="com.example.project.ui.workout.StartWorkoutFragment"
+        android:label="@string/title_startWorkout"
+        tools:layout="@layout/fragment_startworkout" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.project.ui.notifications.NotificationsFragment"
+        android:label="@string/title_notifications"
+        tools:layout="@layout/fragment_notifications" />
+</navigation>
