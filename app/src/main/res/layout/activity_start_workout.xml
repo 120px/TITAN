@@ -10,7 +10,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:id="@+id/layout">
+        android:id="@+id/layout"
+        >
 
         <TextView
             android:id="@+id/tvNewWorkout"
@@ -21,15 +22,45 @@
             android:textSize="25dp"
             android:layout_gravity="center"/>
 
-        <Button
-            android:id="@+id/btnAddExercise"
-            android:layout_width="wrap_content"
+        <TextView
+            android:id="@+id/tvWorkoutDate"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Add Exercise"
-            android:maxWidth="120dp"
-            android:maxHeight="7dp"
-            android:textSize="10dp"
-            style="@style/mainPageButtons"/>
+            android:text="DATE"
+            android:textAlignment="center"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="*"
+            android:layout_marginTop="20dp">
+
+            <TableRow
+                android:id="@+id/rowButtons"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/btnAddExercise"
+                    style="@style/mainPageButtons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="120dp"
+                    android:maxHeight="7dp"
+                    android:text="Add Exercise"
+                    android:textSize="10dp" />
+
+                <Button
+                    android:id="@+id/btnFinishWorkout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxWidth="120dp"
+                    android:maxHeight="7dp"
+                    android:text="Finish"
+                    android:textSize="10dp"
+                    android:backgroundTint="@color/titanRed"/>
+            </TableRow>
+        </TableLayout>
 
     </LinearLayout>
 </ScrollView>

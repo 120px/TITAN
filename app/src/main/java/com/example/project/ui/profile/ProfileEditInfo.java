@@ -36,7 +36,6 @@ public class ProfileEditInfo extends AppCompatActivity implements View.OnClickLi
     private String userId;
 
     Intent intent;
-    String dbEmail, dbFirstName, dbLastName, dbUsername, dbPassword;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -95,11 +94,6 @@ public class ProfileEditInfo extends AppCompatActivity implements View.OnClickLi
 
     private void saveChanges()
     {
-//        dbReference.child(userId).child("email").setValue(etEditEmail.getText().toString().trim());
-//        dbReference.child(userId).child("firstName").setValue(etEditFirstName.getText().toString().trim());
-//        dbReference.child(userId).child("lastName").setValue(etEditLastName.getText().toString().trim());
-//        dbReference.child(userId).child("password").setValue(etEditPassword.getText().toString().trim());
-
        AlertDialog.Builder alert =  new AlertDialog.Builder(this);
        alert.setTitle("Confirmation");
        alert.setMessage("Please enter your current password to confirm the changes");
@@ -133,7 +127,7 @@ public class ProfileEditInfo extends AppCompatActivity implements View.OnClickLi
            }
        });
 
-       AlertDialog alertShow = alert.create();
+        AlertDialog alertShow = alert.create();
         alertShow.show();
 
     }

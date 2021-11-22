@@ -52,6 +52,9 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
         edEmailLogin = findViewById(R.id.edEmailLogin);
         etPassword = findViewById(R.id.etPassword);
 
+        edEmailLogin.setText("rog@gmail.com");
+        etPassword.setText("1234567");
+
         mAuth = FirebaseAuth.getInstance();
 
     }
